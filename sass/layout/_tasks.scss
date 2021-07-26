@@ -1,0 +1,35 @@
+.tasks {
+  text-align: center;
+  padding: 94px 0px;
+}
+.tasks-images {
+  display: flex;
+  margin-top: 50px;
+  margin-left: calc(-1 * var(--card-gap));
+  .tasks-images-item {
+    flex-basis: calc((100% / 3) - var(--card-gap));
+  }
+}
+.tasks-images-item {
+  position: relative;
+  margin-left: var(--card-gap);
+  .gap {
+    display: block;
+  }
+}
+.tasks-text {
+  position: absolute;
+  width: 100%;
+  transform: translateY(-100%);
+  padding: 27px 27px;
+  background-color: var(--tasks-text-background);
+}
+.tasks-text-item {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--hover-textcolor);
+}
