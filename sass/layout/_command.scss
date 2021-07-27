@@ -11,20 +11,17 @@
   background-color: var(--hover-textcolor);
 }
 .tasks-command-title {
+  @include font(700, 36px, 42px, 0.03em);
   text-align: center;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
   color: var(--title-textcolor);
 }
 .command-list {
   display: flex;
   margin-top: 50px;
   margin-left: calc(-1 * var(--card-gap));
-}
-.command-list > .command-list-item {
-  flex-basis: calc((100% / 3) - var(--card-gap));
+  .command-list-item {
+    flex-basis: calc((100% / 3) - var(--card-gap));
+  }
 }
 .command-list-item {
   text-align: center;
@@ -34,16 +31,11 @@
   margin-left: var(--card-gap);
 }
 .command-list-item-title {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+  @include font(500, 16px, 19px, 0.03em);
   color: var(--title-textcolor);
 }
 .command-list-item-text {
   margin-top: 10px;
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+  @include font(400, 16px, 19px, 0.03em);
   color: var(--paragraph-textcolor);
 }

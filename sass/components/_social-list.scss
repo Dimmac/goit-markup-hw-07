@@ -5,10 +5,8 @@
 }
 .social-list-link {
   transition-property: background-color, fill;
-  transition-duration: var(--time-transition-duration);
-  transition-timing-function: var(--timing-function);
-  display: flex;
-  align-items: center;
+  @extend %transition-order;
+  @extend %align;
   justify-content: center;
   width: 44px;
   height: 44px;

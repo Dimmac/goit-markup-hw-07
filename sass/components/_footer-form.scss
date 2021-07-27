@@ -2,11 +2,8 @@
   margin-left: auto;
 }
 .footer-form-head {
+  @include font(700, 14px, 16px, 0.03em);
   margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--hover-textcolor);
 }
@@ -24,15 +21,10 @@
 }
 .footer-form-button {
   transition-property: background-color;
-  transition-duration: var(--time-transition-duration);
-  transition-timing-function: var(--timing-function);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  display: flex;
-  align-items: center;
+  @extend %transition-order;
+  @include font(700, 16px, 30px, 00.06em);
+  @extend %align;
   text-align: center;
-  letter-spacing: 0.06em;
   color: var(--hover-textcolor);
   background-color: var(--theme-textcolor);
   border-radius: 4px;

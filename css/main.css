@@ -24,6 +24,20 @@
   margin: -1px;
 }
 
+.social-list-link, .footer-form-button, .close-btn, .icon-input, .modal-form-checkbox-label, .contact-list-item,
+.contact-list,
+.site-nav,
+.nav-section,
+.menu .container, .box-icon-methods, .clients-list-link, .social-list-link-footer {
+  display: flex;
+  align-items: center;
+}
+
+.social-list-link, .footer-form-button, .close-btn, .modal-form-input, .icon-input, .modal-form-message:focus, .modal-form-button, .nav-list-item, .contact-list-item, .modal-btn, .clients-list-link, .geoposition, .address-link, .social-list-link-footer, .modal-btn-portfolio, .thumb-link {
+  transition-duration: var(--time-transition-duration);
+  transition-timing-function: var(--timing-function);
+}
+
 .list {
   list-style: none;
 }
@@ -82,10 +96,6 @@ ul {
 
 .social-list-link {
   transition-property: background-color, fill;
-  transition-duration: var(--time-transition-duration);
-  transition-timing-function: var(--timing-function);
-  display: flex;
-  align-items: center;
   justify-content: center;
   width: 44px;
   height: 44px;
@@ -109,11 +119,11 @@ ul {
 }
 
 .footer-form-head {
-  margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  margin-bottom: 20px;
   text-transform: uppercase;
   color: var(--hover-textcolor);
 }
@@ -134,15 +144,11 @@ ul {
 
 .footer-form-button {
   transition-property: background-color;
-  transition-duration: var(--time-transition-duration);
-  transition-timing-function: var(--timing-function);
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
+  line-height: 1.88;
   letter-spacing: 0.06em;
+  text-align: center;
   color: var(--hover-textcolor);
   background-color: var(--theme-textcolor);
   border-radius: 4px;
@@ -198,10 +204,6 @@ ul {
 
 .close-btn {
   transition-property: fill;
-  transition-duration: var(--time-transition-duration);
-  transition-timing-function: var(--timing-function);
-  display: flex;
-  align-items: center;
   justify-content: center;
   position: absolute;
   top: 8px;
@@ -228,8 +230,8 @@ ul {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--title-textcolor);
 }
 
@@ -244,8 +246,6 @@ ul {
 
 .modal-form-input {
   transition-property: border-color;
-  transition-duration: var(--time-transition-duration);
-  transition-timing-function: var(--timing-function);
   width: 100%;
   border: 1px solid #2196f3;
   border-radius: 4px;
@@ -270,16 +270,12 @@ ul {
 
 .icon-input {
   transition-property: fill;
-  transition-duration: var(--time-transition-duration);
-  transition-timing-function: var(--timing-function);
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   left: 12px;
   width: 18px;
   height: 18px;
-  display: flex;
-  align-items: center;
   justify-content: center;
 }
 
@@ -300,8 +296,6 @@ ul {
 
 .modal-form-message:focus {
   transition-property: border-color;
-  transition-duration: var(--time-transition-duration);
-  transition-timing-function: var(--timing-function);
   outline: none;
   border-color: #2196f3;
 }
@@ -312,23 +306,21 @@ ul {
 
 .placeholder {
   font-weight: 400;
-  font-size: 10px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.01em;
 }
 
 .modal-form-button {
   align-self: center;
   transition-property: background-color;
-  transition-duration: var(--time-transition-duration);
-  transition-timing-function: var(--timing-function);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
   padding: 10px 32px;
   margin-top: var(--card-gap);
   border-radius: 4px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
   color: var(--hover-textcolor);
   background-color: var(--theme-textcolor);
   border: none;
@@ -344,8 +336,6 @@ ul {
 }
 
 .modal-form-checkbox-label {
-  display: flex;
-  align-items: center;
   justify-content: center;
   margin-top: 20px;
   font-weight: 400;
@@ -372,15 +362,6 @@ ul {
 
 .modal-form-checkbox:focus + .modal-form-checkbox-label::before {
   outline: 1px var(--theme-textcolor) solid;
-}
-
-.contact-list-item,
-.contact-list,
-.site-nav,
-.nav-section,
-.menu .container {
-  display: flex;
-  align-items: center;
 }
 
 .menu {
@@ -415,8 +396,6 @@ ul {
 .nav-list-item,
 .contact-list-item {
   transition-property: color;
-  transition-duration: var(--time-transition-duration);
-  transition-timing-function: var(--timing-function);
   font-weight: 500;
   padding: 32px 0px;
 }
@@ -442,6 +421,7 @@ ul {
 }
 
 .contact-list-item {
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -502,14 +482,12 @@ ul {
 
 .modal-btn {
   transition-property: background-color;
-  transition-duration: var(--time-transition-duration);
-  transition-timing-function: var(--timing-function);
   padding: 10px 32px;
   margin-top: var(--card-gap);
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--hover-textcolor);
   background-color: var(--theme-textcolor);
@@ -545,6 +523,7 @@ ul {
 
 .methods-list-item-text {
   margin-top: 10px;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -557,9 +536,7 @@ ul {
 }
 
 .box-icon-methods {
-  display: flex;
   justify-content: center;
-  align-items: center;
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
@@ -603,8 +580,8 @@ ul {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
   color: var(--hover-textcolor);
 }
@@ -624,11 +601,11 @@ ul {
 }
 
 .tasks-command-title {
-  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--title-textcolor);
 }
 
@@ -638,7 +615,7 @@ ul {
   margin-left: calc(-1 * var(--card-gap));
 }
 
-.command-list > .command-list-item {
+.command-list .command-list-item {
   flex-basis: calc((100% / 3) - var(--card-gap));
 }
 
@@ -659,6 +636,7 @@ ul {
 
 .command-list-item-text {
   margin-top: 10px;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -674,8 +652,8 @@ ul {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--title-textcolor);
 }
 
@@ -687,10 +665,6 @@ ul {
 
 .clients-list-link {
   transition-property: fill, border-color;
-  transition-duration: var(--time-transition-duration);
-  transition-timing-function: var(--timing-function);
-  display: flex;
-  align-items: center;
   justify-content: center;
   width: 170px;
   height: 92px;
@@ -737,8 +711,6 @@ ul {
 
 .geoposition {
   transition-property: color;
-  transition-duration: var(--time-transition-duration);
-  transition-timing-function: var(--timing-function);
   color: var(--hover-textcolor);
 }
 
@@ -748,8 +720,6 @@ ul {
 
 .address-link {
   transition-property: color;
-  transition-duration: var(--time-transition-duration);
-  transition-timing-function: var(--timing-function);
   color: var(--footer-contacts-textcolor);
 }
 
@@ -776,11 +746,11 @@ ul {
 }
 
 .join-title {
-  text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: var(--hover-textcolor);
 }
 
@@ -795,10 +765,6 @@ ul {
 
 .social-list-link-footer {
   transition-property: background-color;
-  transition-duration: var(--time-transition-duration);
-  transition-timing-function: var(--timing-function);
-  display: flex;
-  align-items: center;
   justify-content: center;
   width: 44px;
   height: 44px;
@@ -833,15 +799,13 @@ ul {
 
 .modal-btn-portfolio {
   transition-property: color, background-color, box-shadow;
-  transition-duration: var(--time-transition-duration);
-  transition-timing-function: var(--timing-function);
   padding: 6px 22px;
   border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
+  line-height: 1.63;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--title-textcolor);
   background-color: var(--command-section-background-color);
 }
@@ -864,7 +828,7 @@ ul {
   margin-top: 4px;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--paragraph-textcolor);
 }
@@ -885,8 +849,6 @@ ul {
 .thumb-link {
   display: block;
   transition-property: box-shadow;
-  transition-duration: var(--time-transition-duration);
-  transition-timing-function: var(--timing-function);
 }
 
 .thumb-link:hover, .thumb-link:focus {

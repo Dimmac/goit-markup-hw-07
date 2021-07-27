@@ -3,18 +3,14 @@
 .site-nav,
 .nav-section,
 .menu .container {
-  display: flex;
-  align-items: center;
+  @extend %align;
 }
 .menu {
   border-bottom: var(--line-color) solid 1px;
 }
 .logo {
   font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+  @include font(700, 26px, 31px, 0.03em);
   color: var(--theme-textcolor);
 }
 .header-studio {
@@ -32,8 +28,7 @@
 .nav-list-item,
 .contact-list-item {
   transition-property: color;
-  transition-duration: var(--time-transition-duration);
-  transition-timing-function: var(--timing-function);
+  @extend %transition-order;
   font-weight: 500;
   padding: 32px 0px;
 }
@@ -56,9 +51,7 @@
   }
 }
 .contact-list-item {
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include font(500, 14px, 16px, 0.02em);
   color: var(--paragraph-textcolor);
   &:hover,
   &:focus {

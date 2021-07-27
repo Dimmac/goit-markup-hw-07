@@ -18,15 +18,11 @@
 }
 .geoposition,
 .address-link {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include font(400, 14px, 24px, 0.03em);
 }
 .geoposition {
   transition-property: color;
-  transition-duration: var(--time-transition-duration);
-  transition-timing-function: var(--timing-function);
+  @extend %transition-order;
   color: var(--hover-textcolor);
   &:hover,
   &:focus {
@@ -35,8 +31,7 @@
 }
 .address-link {
   transition-property: color;
-  transition-duration: var(--time-transition-duration);
-  transition-timing-function: var(--timing-function);
+  @extend %transition-order;
   color: var(--footer-contacts-textcolor);
   &:hover,
   &:focus {
@@ -58,11 +53,8 @@
   margin-left: 70px;
 }
 .join-title {
+  @include font(700, 14px, 16px, 0.03em);
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
   color: var(--hover-textcolor);
 }
 .social-list-footer {
@@ -74,10 +66,8 @@
 }
 .social-list-link-footer {
   transition-property: background-color;
-  transition-duration: var(--time-transition-duration);
-  transition-timing-function: var(--timing-function);
-  display: flex;
-  align-items: center;
+  @extend %transition-order;
+  @extend %align;
   justify-content: center;
   width: 44px;
   height: 44px;

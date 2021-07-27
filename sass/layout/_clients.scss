@@ -3,11 +3,8 @@
   padding-bottom: 94px;
 }
 .clients-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  @include font(700, 36px, 42px, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--title-textcolor);
 }
 .clients-list {
@@ -17,10 +14,8 @@
 }
 .clients-list-link {
   transition-property: fill, border-color;
-  transition-duration: var(--time-transition-duration);
-  transition-timing-function: var(--timing-function);
-  display: flex;
-  align-items: center;
+  @extend %transition-order;
+  @extend %align;
   justify-content: center;
   width: 170px;
   height: 92px;
