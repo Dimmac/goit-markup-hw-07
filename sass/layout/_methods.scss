@@ -1,30 +1,30 @@
-.our-methods-section {
+.methods {
   padding-top: 94px;
 }
-.methods-list {
+.methods_list {
   display: flex;
   margin-left: calc(-1 * var(--card-gap));
   padding: 0;
 }
-.methods-list-item {
+.methods_item {
   flex-basis: calc(100% / 4 - var(--card-gap));
   margin-left: var(--card-gap);
 }
-.methods-list-item-title {
+.methods_title {
   @include font(700, 14px, 16px, 0.03em);
   text-transform: uppercase;
   color: var(--title-textcolor);
 }
-.methods-list-item-text {
+.methods_text {
   margin-top: 10px;
   @include font(400, 14px, 24px, 0.03em);
   color: var(--paragraph-textcolor);
 }
-.icon-methods {
+.methods_icon {
   width: 70px;
   height: 70px;
 }
-.box-icon-methods {
+.methods_box {
   @extend %align;
   justify-content: center;
   width: 270px;

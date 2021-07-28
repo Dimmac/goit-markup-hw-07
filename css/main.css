@@ -24,16 +24,16 @@
   margin: -1px;
 }
 
-.social-list-link, .footer-form-button, .close-btn, .icon-input, .modal-form-checkbox-label, .contact-list-item,
-.contact-list,
-.site-nav,
+.social-list-link, .footer-form-button, .close-btn, .icon-input, .modal-form-checkbox-label, .contacts_link,
+.contacts,
+.nav-section_list,
 .nav-section,
-.menu .container, .box-icon-methods, .clients-list-link, .social-list-link-footer {
+.menu .container, .methods_box, .clients-list-link, .social-list-link-footer {
   display: flex;
   align-items: center;
 }
 
-.social-list-link, .footer-form-button, .close-btn, .modal-form-input, .icon-input, .modal-form-message:focus, .modal-form-button, .nav-list-item, .contact-list-item, .modal-btn, .clients-list-link, .geoposition, .address-link, .social-list-link-footer, .modal-btn-portfolio, .thumb-link {
+.social-list-link, .footer-form-button, .close-btn, .modal-form-input, .icon-input, .modal-form-message:focus, .modal-form-button, .nav-section_link, .contacts_link, .modal-btn, .clients-list-link, .geoposition, .address-link, .social-list-link-footer, .modal-btn-portfolio, .thumb-link {
   transition-duration: var(--time-transition-duration);
   transition-timing-function: var(--timing-function);
 }
@@ -368,7 +368,7 @@ ul {
   border-bottom: var(--line-color) solid 1px;
 }
 
-.logo {
+.nav-section_logo {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -377,39 +377,39 @@ ul {
   color: var(--theme-textcolor);
 }
 
-.header-studio {
+.nav-section_header-studio {
   color: var(--logo-black-textcolor);
 }
 
-.site-nav {
+.nav-section_list {
   margin-left: 93px;
 }
 
-.site-nav .nav-list-item.current {
+.nav-section_list .nav-section_link.current {
   color: var(--theme-textcolor);
 }
 
-.site-nav .item:not(:last-child) {
+.nav-section_list .nav-section_item:not(:last-child) {
   margin-right: 50px;
 }
 
-.nav-list-item,
-.contact-list-item {
+.nav-section_link,
+.contacts_link {
   transition-property: color;
   font-weight: 500;
   padding: 32px 0px;
 }
 
-.nav-list-item {
+.nav-section_link {
   position: relative;
   color: var(--title-textcolor);
 }
 
-.nav-list-item:hover, .nav-list-item:focus {
+.nav-section_link:hover, .nav-section_link:focus {
   color: var(--theme-textcolor);
 }
 
-.nav-list-item.current::after {
+.nav-section_link.current::after {
   position: absolute;
   content: "";
   bottom: 0;
@@ -420,7 +420,7 @@ ul {
   background-color: #2196f3;
 }
 
-.contact-list-item {
+.contacts_link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -428,33 +428,33 @@ ul {
   color: var(--paragraph-textcolor);
 }
 
-.contact-list-item:hover, .contact-list-item:focus {
+.contacts_link:hover, .contacts_link:focus {
   color: var(--theme-textcolor);
 }
 
-.contact-list {
+.contacts {
   margin-left: auto;
 }
 
-.contact-list .item:not(:last-child) {
+.contacts .contacts_item:not(:last-child) {
   margin-right: 50px;
 }
 
-.icon-envelope {
+.contacts_icon-envelope {
   width: 16px;
   height: 12px;
   margin-right: 10px;
   fill: currentColor;
 }
 
-.icon-smartphone {
+.contacts_icon-smartphone {
   width: 10px;
   height: 16px;
   margin-right: 10px;
   fill: currentColor;
 }
 
-.hero-section {
+.hero {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -467,11 +467,12 @@ ul {
   background-size: cover;
 }
 
-.hero-section .container {
+.hero_container {
   width: 696px;
+  margin: 0 auto;
 }
 
-.hero-title {
+.hero_title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -497,22 +498,22 @@ ul {
   background-color: #188ce8;
 }
 
-.our-methods-section {
+.methods {
   padding-top: 94px;
 }
 
-.methods-list {
+.methods_list {
   display: flex;
   margin-left: calc(-1 * var(--card-gap));
   padding: 0;
 }
 
-.methods-list-item {
+.methods_item {
   flex-basis: calc(100% / 4 - var(--card-gap));
   margin-left: var(--card-gap);
 }
 
-.methods-list-item-title {
+.methods_title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -521,7 +522,7 @@ ul {
   color: var(--title-textcolor);
 }
 
-.methods-list-item-text {
+.methods_text {
   margin-top: 10px;
   font-weight: 400;
   font-size: 14px;
@@ -530,12 +531,12 @@ ul {
   color: var(--paragraph-textcolor);
 }
 
-.icon-methods {
+.methods_icon {
   width: 70px;
   height: 70px;
 }
 
-.box-icon-methods {
+.methods_box {
   justify-content: center;
   width: 270px;
   height: 120px;

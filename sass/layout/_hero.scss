@@ -1,4 +1,4 @@
-.hero-section {
+.hero {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -13,11 +13,12 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  .container {
-    width: 696px;
-  }
 }
-.hero-title {
+.hero_container {
+  width: 696px;
+  margin: 0 auto;
+}
+.hero_title {
   @include font(900, 44px, 60px, 0.06em);
   text-transform: uppercase;
   color: var(--hover-textcolor);
